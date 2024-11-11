@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist of Courses</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    background: url('landing-page-image.png') no-repeat center center/cover;
+    position: relative;
+}
+
+/* Adding blur to the background */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    z-index: -1;
+}
+
+header {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.6); /* Semi-transparent background for the content */
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px); /* Adds blur effect behind the header content */
+    margin-bottom: 30px; /* Add space below the header */
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header h2, header h3, header h4 {
+    margin: 5px;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.logo-container img {
+    max-width: 150px; /* Set max width for the logo */
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button-container a {
+    text-decoration: none;
+}
+
+.button-container button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+.button-container button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #14a73e98;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Container for the logo -->
+    <div class="logo-container">
+        <img src="cvsu-logo.png" alt="CvSU Logo">
+    </div>
+
+    <!-- Header content -->
+    <header>
+        <h1>Cavite State University - Bacoor City Campus</h1>
+        <h2>Department of Computer Studies</h2>
+        <h3>Bachelor of Science in Computer Science</h3>
+        <h4>Checklist of Courses</h4>
+    </header>
+
+    <!-- Button in the middle -->
+    <div class="button-container">
+        <a href="index.php">
+            <button>View Checklist</button>
+        </a>
+    </div>
+
+</body>
+
+</html>
